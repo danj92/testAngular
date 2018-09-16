@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   // constructor() {}
   nameControl: FormControl;
   ngOnInit() {
-    this.nameControl = new FormControl('Jon', [this.myValidators], [this.myAsyncValidators]);
+    this.nameControl = new FormControl('Jon', [this.myValidators]);
     this.nameControl.valueChanges.subscribe(value => console.log(value));
     this.nameControl.statusChanges.subscribe(status => {
       console.log(this.nameControl.errors);

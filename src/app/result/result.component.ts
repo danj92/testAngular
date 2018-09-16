@@ -12,7 +12,8 @@ export class ResultComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   formInitialized(name: string, form: FormGroup) {
     this.checkoutForm.setControl(name, form);
