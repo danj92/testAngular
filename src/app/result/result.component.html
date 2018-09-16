@@ -1,0 +1,13 @@
+<form [formGroup]="checkoutForm">
+    <!-- <input type="text" formControlName="fullName"> -->
+
+    <app-form1 (formReady)="formInitialized('fomr1', $event)" ></app-form1>
+    <app-form2 (formReady)="formInitialized('fomr2', $event)"></app-form2>
+
+    <h1>JSON</h1>
+
+    <pre>
+    {{ checkoutForm.value | json}}
+  </pre>
+</form>
+

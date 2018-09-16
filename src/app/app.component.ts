@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-
 
 @Component({
   selector: 'app-root',
@@ -9,14 +7,14 @@ import { FormGroup } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
 
-  checkoutForm = new FormGroup({});
+  // checkoutForm = new FormGroup({});
 
-  constructor() {}
+  // constructor() {}
 
   ngOnInit() {}
 
-  formInitialized(name: string, form: FormGroup) {
-    this.checkoutForm.setControl(name, form);
-    console.log(this.checkoutForm.value);
-  }
+  // formInitialized(name: string, form: FormGroup) {
+  //   this.checkoutForm.setControl(name, form);
+  //   console.log(this.checkoutForm.value);
+  // }
 }
