@@ -1,8 +1,8 @@
 <form [formGroup]="checkoutForm">
     <!-- <input type="text" formControlName="fullName"> -->
 
-    <app-form1 (formReady)="formInitialized('fomr1', $event)" ></app-form1>
-    <app-form2 (formReady)="formInitialized('fomr2', $event)"></app-form2>
+    <!-- <app-form1 (formReady)="formInitialized('fomr1', $event)" ></app-form1>
+    <app-form2 (formReady)="formInitialized('fomr2', $event)"></app-form2> -->
 
     <h1>JSON</h1>
 
@@ -11,3 +11,7 @@
   </pre>
 </form>
 
+<!-- <ul *ngFor="let key of Object.value(forms)">
+  <li>{{ key }}</li>
+</ul> -->
+<p>test: {{ dataService.forms['form1'].name1 }}</p>

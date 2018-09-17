@@ -1,6 +1,8 @@
-<div [formGroup]="formGropOne">
-  Form 1
-  <input type="text" name="name1" formControlName="name1">
-</div>
+<form [formGroup]="formGropOne" (ngSubmit)="submit()">
+  <div>
+    Form 1
+    <input type="text" name="name1" formControlName="name1">
+  </div>
 
-<a class="btn" routerLink="form2">dalej ></a>
+  <button type="submit">Dalej</button>
+</form>

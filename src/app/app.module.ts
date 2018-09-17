@@ -9,6 +9,7 @@ import { Form2Component } from './form2/form2.component';
 import { ResultComponent } from './result/result.component';
 import { formRoutes } from './form.routing';
 import { Form3Component } from './form3/form3.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { Form3Component } from './form3/form3.component';
     ReactiveFormsModule,
     RouterModule.forRoot(formRoutes),
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

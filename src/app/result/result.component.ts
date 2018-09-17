@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-result',
@@ -10,7 +11,7 @@ export class ResultComponent implements OnInit {
 
   checkoutForm = new FormGroup({});
 
-  constructor() {}
+  constructor(public dataService: DataService) {}
 
   ngOnInit() {
   }
