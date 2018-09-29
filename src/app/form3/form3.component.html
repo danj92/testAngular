@@ -1,9 +1,9 @@
 <form [formGroup]="userListGroup">
   <ul formArrayName="users">
-    <li *ngFor="let userControl of userListGroup.controls[user].controls; let i = index">
+    <!-- <li *ngFor="let userControl of userListGroup.controls[user].controls; let i = index">
       <input formControlName="{{i}}">
       <button (click)="removeUserControl(i)">Remove</button>
-    </li>
+    </li> -->
   </ul>
 </form>
 

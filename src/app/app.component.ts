@@ -10,12 +10,12 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   hellow = 'Andriy';
-  items = [
-    "Apple iPhone 7",
-   "Huawei Mate 9",
-   "Samsung Galaxy S7",
-    "Motorola Moto Z"
-  ];
+  // items = [
+  //   "Apple iPhone 7",
+  //  "Huawei Mate 9",
+  //  "Samsung Galaxy S7",
+  //   "Motorola Moto Z"
+  // ];
 
   // myContext = {
   //   $implicit: 'World',
@@ -24,6 +24,22 @@ export class AppComponent implements OnInit {
 
   count = 5;
   consition = true;
+
+  mode = 'list';
+
+  items = [
+    {
+      header: 'header firs 1',
+      content: 'contsnt header firs 1'
+    },
+    {
+      header: 'header firs 2',
+      content: 'contsnt header firs 2'
+    }
+  ];
+
+
+
   // checkoutForm = new FormGroup({});
 
   // constructor() {}

@@ -29,7 +29,7 @@
   <ng-template ngSwitchDefault>{{ count * 1000 }}</ng-template>
 </div> -->
 
-<ng-container *ngTemplateOutlet="greet"></ng-container>
+<!-- <ng-container *ngTemplateOutlet="greet"></ng-container>
 <hr>
 <ng-container *ngTemplateOutlet="eng; context: myContext"></ng-container>
 <hr>
@@ -38,4 +38,11 @@
 
 <ng-template #greet><span>Hello</span></ng-template>
 <ng-template #eng let-name1><span>Hello {{name1}}!</span></ng-template>
-<ng-template #svk let-person="localSk"><span>Ahoj {{person}}!</span></ng-template>
+<ng-template #svk let-person="localSk"><span>Ahoj {{person}}!</span></ng-template> -->
+
+<app-card-or-list-view
+  [items]="items"
+  [mode]="mode"
+>
+
+</app-card-or-list-view>
