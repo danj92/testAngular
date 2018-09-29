@@ -6,4 +6,36 @@
 <br/>
 <br/>
 <!-- <input [formControl]="nameControl"> -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <p>{{hellow}}</p>
+<app-my-input
+  [state]="hellow"
+></app-my-input> -->
+
+
+<!-- <div *ngIf="condition; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>thenBlock</ng-template>
+<ng-template #elseBlock>elseBlock</ng-template>
+
+<button (click)="toggle()">Toggle</button> -->
+
+<!-- <ul>
+  <li *ngFor="let item of items;let i = index">{{ i + 1 }} {{item}}</li>
+</ul> -->
+
+<!-- <div [ngSwitch]="count">
+  <ng-template ngSwitchCase="5">{{ count * 10 }}</ng-template>
+  <ng-template ngSwitchDefault>{{ count * 1000 }}</ng-template>
+</div> -->
+
+<ng-container *ngTemplateOutlet="greet"></ng-container>
+<hr>
+<ng-container *ngTemplateOutlet="eng; context: myContext"></ng-container>
+<hr>
+<ng-container *ngTemplateOutlet="svk; context: myContext"></ng-container>
+<hr>
+
+<ng-template #greet><span>Hello</span></ng-template>
+<ng-template #eng let-name1><span>Hello {{name1}}!</span></ng-template>
+<ng-template #svk let-person="localSk"><span>Ahoj {{person}}!</span></ng-template>

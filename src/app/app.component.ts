@@ -9,7 +9,21 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  hellow = 'Andriy';
+  items = [
+    "Apple iPhone 7",
+   "Huawei Mate 9",
+   "Samsung Galaxy S7",
+    "Motorola Moto Z"
+  ];
 
+  // myContext = {
+  //   $implicit: 'World',
+  //   localSk: 'Svet'
+  // };
+
+  count = 5;
+  consition = true;
   // checkoutForm = new FormGroup({});
 
   // constructor() {}
@@ -43,5 +57,11 @@ export class AppComponent implements OnInit {
   //     return Observable.of(null);
   //   }
   // }
+
+
+  toggle() {
+    console.log(this.consition);
+    this.consition = !this.consition;
+  }
 }
 

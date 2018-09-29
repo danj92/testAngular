@@ -10,6 +10,7 @@ import { ResultComponent } from './result/result.component';
 import { formRoutes } from './form.routing';
 import { Form3Component } from './form3/form3.component';
 import { DataService } from './data.service';
+import { MyInputComponent } from './my-input/my-input.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DataService } from './data.service';
     Form2Component,
     ResultComponent,
     Form3Component,
+    MyInputComponent,
   ],
   imports: [
     BrowserModule,
